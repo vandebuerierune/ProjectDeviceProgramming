@@ -1,0 +1,1 @@
+D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\punkapiBeers.UWP.csproj;x86
