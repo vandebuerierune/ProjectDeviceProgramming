@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("punkapiBeers.Views.OneBeer.xaml", "Views/OneBeer.xaml", typeof(global::punkapiBeers.Views.OneBeer))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("punkapiBeers.Views.BeerFilter.xaml", "Views/BeerFilter.xaml", typeof(global::punkapiBeers.Views.BeerFilter))]
 
 namespace punkapiBeers.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\OneBeer.xaml")]
-    public partial class OneBeer : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\BeerFilter.xaml")]
+    public partial class BeerFilter : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView PunkapiMainPage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(OneBeer));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(BeerFilter));
             PunkapiMainPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PunkapiMainPage");
         }
     }

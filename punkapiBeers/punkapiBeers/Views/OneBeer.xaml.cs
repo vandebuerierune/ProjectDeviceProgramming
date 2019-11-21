@@ -27,6 +27,8 @@ namespace punkapiBeers.Views
         {
                 List<SingleBeer> everything = await PunkapiRepository.GetAllSingleBeersAsync(bearId);
                 Debug.WriteLine(everything);
+            PunkapiMainPage.ItemsSource = everything;
+
         }
     }
 }

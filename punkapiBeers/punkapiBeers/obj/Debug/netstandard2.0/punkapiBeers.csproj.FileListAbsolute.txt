@@ -28,3 +28,4 @@ D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\obj\Debug\netstand
 D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\obj\Debug\netstandard2.0\ref\punkapiBeers.dll
 D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\obj\Debug\netstandard2.0\punkapiBeers.pdb
 D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\obj\Debug\netstandard2.0\punkapiBeers.csprojAssemblyReference.cache
+D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\obj\Debug\netstandard2.0\Views\BeerFilter.xaml.g.cs

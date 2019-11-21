@@ -50,6 +50,26 @@ namespace punkapiBeers.Repositories
         }
 
     }
+        public static async Task<List<Beers>> GetAllfilteredAsync(string date)
+        {
+            string url = $"https://api.punkapi.com/v2/beers?brewed_before={date}";
+
+            using (HttpClient client = GetHttpClient())
+            {
+                try
+                {
+                    string json = await client.GetStringAsync(url);
+                    List<Beers> beers = JsonConvert.DeserializeObject<List<Beers>>(json);
+                    return beers;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+
+        }
         public static async Task<List<SingleBeer>> GetAllSingleBeersAsync(int BeerId)
         {
             string url = $"https://api.punkapi.com/v2/beers/{BeerId}";

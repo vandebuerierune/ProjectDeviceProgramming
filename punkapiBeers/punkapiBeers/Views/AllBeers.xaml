@@ -20,8 +20,8 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Image Grid.RowSpan="2" Source="{Binding Image}"/>
-                            <Label Grid.Row="1" FontAttributes="Bold" Text="{Binding Name}"/>
-                            <Label Grid.Row="2" TextColor="Gray" Text="{Binding Description}"/>
+                            <Label Grid.Row="0" FontAttributes="Bold" Text="{Binding Name}"/>
+                            <Label Grid.Row="1" TextColor="Gray" Text="{Binding Description}"/>
 
                         </Grid>
                     </Frame>

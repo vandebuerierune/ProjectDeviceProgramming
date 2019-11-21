@@ -6,8 +6,11 @@
              mc:Ignorable="d"
              x:Class="punkapiBeers.Views.OneBeer">
 
-            
-                
+
+    <ListView Margin="8" x:Name="PunkapiMainPage" RowHeight="500">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
                     <Frame Margin="8">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -15,14 +18,31 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Image Grid.RowSpan="2" Source="{Binding Image}"/>
+                            <Label Grid.Row="0" Margin="60"/>
                             <Label Grid.Row="1" FontAttributes="Bold" Text="{Binding Name}"/>
-                            <Label Grid.Row="2" TextColor="Gray" Text="{Binding Description}"/>
+                            <Label Grid.Row="2" TextColor="Gray" Text="{Binding Tagline}"/>
+                            <Label Grid.Row="3" TextColor="Gray" Text="{Binding Description}"/>
+                            <Label Grid.Row="4" Margin="10"/>
+                            <Label Grid.Row="5" TextColor="Gray" Text="{Binding procent}"/>
+                            <Label Grid.Row="6" TextColor="Gray" Text="{Binding Tip}"/>
+                            <Label Grid.Row="7" TextColor="Gray" Text="{Binding food_pairing}"/>
+                            <Label Grid.Row="8" TextColor="Gray" Text="{Binding Contributor}"/>
 
                         </Grid>
                     </Frame>
-            
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
