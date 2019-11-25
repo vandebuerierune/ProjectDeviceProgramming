@@ -5,17 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="punkapiBeers.Views.OneBeer">
-
-
-    <ListView Margin="8" x:Name="PunkapiMainPage" RowHeight="500">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
+   <StackLayout>
+        <ScrollView>
                     <Frame Margin="8">
                         <Grid>
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
                                 <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -28,21 +24,38 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <Label Grid.Row="0" Margin="60"/>
-                            <Label Grid.Row="1" FontAttributes="Bold" Text="{Binding Name}"/>
-                            <Label Grid.Row="2" TextColor="Gray" Text="{Binding Tagline}"/>
-                            <Label Grid.Row="3" TextColor="Gray" Text="{Binding Description}"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>   
+                            
+                            <Image x:Name="Image" Grid.Row="0" Grid.ColumnSpan="2" Margin="8" HeightRequest="300" WidthRequest="175"/>
+                            <Label Text="Name: " Grid.Column="0" Grid.Row="1" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Name" Grid.Column="1" Grid.Row="1" FontAttributes="Bold"/>
+                            
+                            <Label Text="Tagline: " Grid.Column="0" Grid.Row="2" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Tagline" Grid.Column="1" Grid.Row="2" TextColor="Gray"/>
+                            
+                            <Label Text="Description: " Grid.Column="0" Grid.Row="3" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Description" Grid.Column="1" Grid.Row="3" TextColor="Gray"/>
+
                             <Label Grid.Row="4" Margin="10"/>
-                            <Label Grid.Row="5" TextColor="Gray" Text="{Binding procent}"/>
-                            <Label Grid.Row="6" TextColor="Gray" Text="{Binding Tip}"/>
-                            <Label Grid.Row="7" TextColor="Gray" Text="{Binding food_pairing}"/>
-                            <Label Grid.Row="8" TextColor="Gray" Text="{Binding Contributor}"/>
+                            
+                            <Label Text="Procent: " Grid.Column="0" Grid.Row="5" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Procent" Grid.Column="1" Grid.Row="5" TextColor="Gray"/>
+                            
+                            <Label Text="Tip: " Grid.Column="0" Grid.Row="6" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Tip" Grid.Column="1" Grid.Row="6" TextColor="Gray"/>
+                            
+                            <Label Text="Food pairings: " Grid.Column="0" Grid.Row="7" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="food_paring" Grid.Column="1" Grid.Row="7" TextColor="Gray"/>
+                            
+                            <Label Text="Contributor: " Grid.Column="0" Grid.Row="8" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="Contributor" Grid.Column="1" Grid.Row="8" TextColor="Gray"/>
+                            
+                            <Label Text="First Brewed: " Grid.Column="0" Grid.Row="9" FontAttributes="Bold" TextColor="Black"/>
+                            <Label x:Name="FirstBrewed" Grid.Column="1" Grid.Row="9" TextColor="Gray"/>
 
                         </Grid>
                     </Frame>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

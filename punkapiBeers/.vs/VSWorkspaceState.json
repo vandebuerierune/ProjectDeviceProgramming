@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\punkapiBeers"
+    "\\punkapiBeers",
+    "\\punkapiBeers\\Views"
   ],
-  "SelectedNode": "\\punkapiBeers\\App.xaml.cs",
+  "SelectedNode": "\\punkapiBeers.sln",
   "PreviewInSolutionExplorer": false
 }

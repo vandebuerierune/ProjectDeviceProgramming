@@ -20,10 +20,12 @@ namespace punkapiBeers.Models
 
         [JsonProperty(PropertyName = "brewers_tips")]
         public string Tip { get; set; }
-        public List<string> food_pairing { get; set; }
+        public List<string> food_pairing { get; set; }  
 
         [JsonProperty(PropertyName = "contributed_by")]
         public string Contributor { get; set; }
+        [JsonProperty(PropertyName = "first_brewed")]
+        public string FirstBrewed { get; set; }
 
     }
 }

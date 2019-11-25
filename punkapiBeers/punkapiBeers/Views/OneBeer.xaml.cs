@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,9 +26,17 @@ namespace punkapiBeers.Views
         
         private async Task GetSingleBeer()
         {
-                List<SingleBeer> everything = await PunkapiRepository.GetAllSingleBeersAsync(bearId);
+                SingleBeer everything = await PunkapiRepository.GetAllSingleBeersAsync(bearId);
                 Debug.WriteLine(everything);
-            PunkapiMainPage.ItemsSource = everything;
+                Image.Source = ImageSource.FromStream(() => new HttpClient().GetStreamAsync(everything.Image).Result);
+            Name.Text = everything.Name;
+            Tagline.Text = everything.Tagline;
+            Description.Text = everything.Description;
+            Procent.Text = everything.procent + "%";
+            Tip.Text = everything.Tip;
+            Contributor.Text = everything.Contributor;
+            FirstBrewed.Text = everything.FirstBrewed;
+
 
         }
     }

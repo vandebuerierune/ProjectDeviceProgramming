@@ -70,7 +70,7 @@ namespace punkapiBeers.Repositories
             }
 
         }
-        public static async Task<List<SingleBeer>> GetAllSingleBeersAsync(int BeerId)
+        public static async Task <SingleBeer> GetAllSingleBeersAsync(int BeerId)
         {
             string url = $"https://api.punkapi.com/v2/beers/{BeerId}";
 
@@ -81,7 +81,7 @@ namespace punkapiBeers.Repositories
 
                     string json = await client.GetStringAsync(url);
                     List<SingleBeer> singleBeers = JsonConvert.DeserializeObject<List<SingleBeer>>(json);
-                    return singleBeers;
+                    return singleBeers[0];
                 }
                 catch (Exception ex)
                 {

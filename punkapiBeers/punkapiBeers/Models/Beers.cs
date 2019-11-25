@@ -17,7 +17,16 @@ namespace punkapiBeers.Models
 
         [JsonProperty(PropertyName = "image_url")]
         public string Image { get; set; }
+  
+        public ImageSource ImageSrc
+        {
+            get { return ImageSource.FromStream(() => new HttpClient().GetStreamAsync(Image).Result); ; }
 
+        }
+
+        [JsonProperty(PropertyName = "FirstBrewed")]
         
+        public string FirstBrewed { get; set; }
+
     }
 }

@@ -5,30 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="punkapiBeers.MainPage">
-
     <ListView Margin="8" x:Name="PunkapiMainPage" RowHeight="120" ItemSelected="PunkapiMainPage_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
-                    <Frame Margin="8">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <Image Grid.RowSpan="2" Source="{Binding ImageSource}"/>
-                            <Label Grid.Row="1" FontAttributes="Bold" Text="{Binding Name}" />
-                            <Label Grid.Row="2" TextColor="Gray" Text="{Binding Tagline}"/>
-
-                        </Grid>
-                    </Frame>
-                </ViewCell>
+                <TextCell Text="{Binding .}" TextColor="black"  >
+                </TextCell>
             </DataTemplate>
         </ListView.ItemTemplate>
+           
     </ListView>
-
 </ContentPage>

@@ -23,36 +23,25 @@ namespace punkapiBeers
         public MainPage()
         {
             InitializeComponent();
-            testRepository();
-            GetAllBeers();
+            FilterItems();
         }
 
-        private async Task GetAllBeers()
+        private void FilterItems()
         {
-            List<Beers> everything = await PunkapiRepository.GetAllBeersAsync();
-            Debug.WriteLine(everything);
+            List<String> Year = new List<string> { "12-2007", "12-2008", "12-2009", "12-2010", "12-2011", "12-2012", "12-2013", "12-2014", "12-2015", "12-2016" };
+            PunkapiMainPage.ItemsSource = Year;
         }
-
-        private async Task testRepository()
-        {
-            List<Beers> beerList = await PunkapiRepository.GetAllBeersAsync();
-
-
-            PunkapiMainPage.ItemsSource = beerList;
-
-        }
-  
 
         private async void PunkapiMainPage_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Beers selected = PunkapiMainPage.SelectedItem as Beers;
+            string selected = PunkapiMainPage.SelectedItem as String;
             if (selected != null)
-            {
-                Navigation.PushAsync(new OneBeer(selected.Id));
-                List<SingleBeer> singleBeer = await PunkapiRepository.GetAllSingleBeersAsync(selected.Id);
+            {                
+                Navigation.PushAsync(new AllBeers());
+                List<Beers> YearUrl = await PunkapiRepository.GetAllfilteredAsync(selected);
                 PunkapiMainPage.SelectedItem = null;
-            }
 
+            }
         }
     }
 }

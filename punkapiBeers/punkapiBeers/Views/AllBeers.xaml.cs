@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,13 +28,28 @@ namespace punkapiBeers.Views
         {
             List<Beers> everything = await PunkapiRepository.GetAllBeersAsync();
             Debug.WriteLine(everything);
+
         }
 
         private async Task testRepository()
         {
             List<Beers> beerList = await PunkapiRepository.GetAllBeersAsync();
-           // List<SingleBeer> singleBeer = await PunkapiRepository.GetAllSingleBeersAsync();
+
             PunkapiMainPage.ItemsSource = beerList;
+
+        }
+
+
+        private async void PunkapiMainPage_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Beers selected = PunkapiMainPage.SelectedItem as Beers;
+            if (selected != null)
+
+            {
+                Navigation.PushAsync(new OneBeer(selected.Id));
+                SingleBeer singleBeer = await PunkapiRepository.GetAllSingleBeersAsync(selected.Id);
+                PunkapiMainPage.SelectedItem = null;
+            }
 
         }
     }

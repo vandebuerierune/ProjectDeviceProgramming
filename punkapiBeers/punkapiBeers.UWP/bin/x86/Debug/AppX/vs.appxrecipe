@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-20T19:53:41.891</Modified>
+      <Modified>2019-11-25T11:33:26.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\bin\x86\Debug\punkapiBeers.UWP.exe">
       <PackagePath>entrypoint\punkapiBeers.UWP.exe</PackagePath>
-      <Modified>2019-11-20T19:53:40.434</Modified>
+      <Modified>2019-11-25T11:33:25.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vande\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers\bin\Debug\netstandard2.0\punkapiBeers.dll">
       <PackagePath>punkapiBeers.dll</PackagePath>
-      <Modified>2019-11-20T19:53:34.211</Modified>
+      <Modified>2019-11-25T11:33:18.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -227,11 +227,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-20T19:53:40.282</Modified>
+      <Modified>2019-11-25T11:33:25.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-20T19:53:40.282</Modified>
+      <Modified>2019-11-25T11:33:25.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -247,7 +247,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xamarin\ProjectDeviceProgramming\punkapiBeers\punkapiBeers.UWP\bin\x86\Debug\Core\punkapiBeers.UWP.exe">
       <PackagePath>punkapiBeers.UWP.exe</PackagePath>
-      <Modified>2019-11-20T19:53:41.885</Modified>
+      <Modified>2019-11-25T11:33:26.729</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

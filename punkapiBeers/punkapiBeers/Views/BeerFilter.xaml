@@ -5,28 +5,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="punkapiBeers.Views.BeerFilter">
-    <ListView Margin="8" x:Name="PunkapiMainPage" RowHeight="120">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Frame Margin="8">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <Image Grid.RowSpan="2" Source="{Binding Image}"/>
-                            <Label Grid.Row="0" FontAttributes="Bold" Text="{Binding Name}"/>
-                            <Label Grid.Row="1" TextColor="Gray" Text="{Binding Description}"/>
-
-                        </Grid>
-                    </Frame>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Text="2007" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" BackgroundColor="LightGray"/>
+                <Label Grid.Row="1" Text="2008" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Text="2009" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Text="2010" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
